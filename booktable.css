@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* border:2px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url('./Asstes/img8.jpg'); 
+    background-size: cover, cover;
+}
+
+.booktable-sec {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 70%;
+    padding: 20px; 
+    border-radius: 10px;
+    box-sizing: border-box; 
+    margin: 0 auto;
+}
+
+form {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 900px;
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 auto; /* Center the form horizontally within its container */
+}
+
+.book-box {
+    /* border: 2px solid blue; */
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px; 
+    box-sizing: border-box;
+    margin: 0 auto; 
+}
+
+
+.book-box h1 {
+    font-size: 2rem;
+    color:#ff6347;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.book-box div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-cross i {
+    /* border: 2px solid; */
+    padding:1rem ;
+    font-size: 2.5rem;
+    cursor: pointer;
+    /* width: 5rem; */
+    transition: transform 0.8s; 
+
+}
+
+.book-cross i:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees in place */
+}
+
+
+
+.book-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color:black;
+}
+
+.book-box input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-box button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+}
+
+.book-box button:hover {
+    background-color:rgb(236, 131, 89);
+
+}
+
+/* ----------------------------------------------------------------- */
+.after-book {
+    background-color: #fff;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    text-align: center;
+    display: none;
+    padding-top:3rem ;
+    
+}
+
+.after-book h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.after-book p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.after-book button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6347; /* Blue color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.after-book button:hover {
+    background-color: #e9833f; /* Darker blue on hover */
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .book-box {
+        padding: 1.5rem;
+    }
+
+    .book-box h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .booktable-sec{
+        padding: 0px;
+    }
+    .book-cross i{
+        margin-top: 0px;
+        padding-top: 0;
+      font-size:2rem;
+    }
+    .book-box h1 {
+        font-size: 1.25rem;
+    }
+
+    .book-box button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}

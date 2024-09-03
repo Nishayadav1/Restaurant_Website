@@ -1,0 +1,1141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color:rgb(248,232,217);; */
+}
+body{
+    background-color:rgb(248,232,217);
+    min-height: 100vh;
+}
+.container{
+    padding:3vw 7vw;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(252, 222, 195);
+    box-shadow: 0 2px 20px rgb(253, 124, 124);
+    z-index: 99;
+  }
+  
+  nav .navbar {
+    height: 100%;
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 50px;
+  }
+  
+  .navbar .logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* border: 2px solid; */
+  }
+  nav .navbar .nav-links {
+    line-height: 70px;
+    height: 100%;
+  }
+  
+  nav .navbar .links {
+    display: flex;
+  }
+  
+  nav .navbar .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+  }
+  
+  nav .navbar .links li a {
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  nav .navbar .links li a:hover{
+    color:rgb(238, 100, 65);
+  }
+  
+  .navbar .search-box {
+    /* border: 2px solid red; */
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertically centers the icons */
+    gap: 1.5rem; /* Adjust the gap between the icons */
+    height: 40px;
+    width: 120px;
+    padding: 0 10px; /* Optional: add padding for better spacing */
+  }
+  
+  .navbar .search-box i {
+    position: static; /* Removes absolute positioning */
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .navbar .search-box i:hover{
+    color:rgb(238, 100, 65);
+  }
+  
+  /*--------------------------------------------------------------------------------  */
+  /* Container for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Style for the dropdown icon */
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* color: rgb(255, 253, 253); */
+    font-size: 24px; /* Adjust the size of the icon */
+    cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the icon */
+    left: 0;
+    background-color:rgb(238, 100, 65);
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+.dropdown-menu a{
+    color:white;
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+  /* ------------------------------------------------------------------- */
+  .navbar .search-box .input-box {
+    position: absolute;
+    right: calc(100% - 40px);
+    top: 80px;
+    height: 40px;
+    width: 300px;
+    background: rgb(238, 100, 65);
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+  
+  .navbar.showInput .search-box .input-box {
+    top: 65px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .search-box .input-box::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: rgb(238, 100, 65);
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+  }
+  
+  .search-box .input-box input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 280px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .navbar .nav-links .sidebar-logo  {
+    font-size: 2rem;
+    color:orange; 
+    font-weight:bolder;
+    display: none;
+  }
+
+.logo-name{
+    color: orange;
+  }
+  .navbar .nav-links .sidebar-logo i:hover{
+     color:red;
+  }
+  
+  .navbar .bx-menu {
+    font-size:2rem;
+    display: none;
+  }
+  .navbar .bx-menu:hover {
+    color:rgb(238, 100, 65);
+  }
+  
+/*--------------------------- navbar end */
+
+/* home page start -----------------------------------*/
+.home{
+    /* margin-top: 3rem; */
+    background-color: rgb(248,232,217);
+    padding: 0 7vw;
+    /* height: 45vw; */
+
+}
+
+.main_slide{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.main_slide div:nth-child(2){
+   flex: 1;
+   display: flex;
+   justify-content:center;
+   padding-top: 90px;
+   /* border: 2px solid red; */
+   /* height:800px; */
+}
+.main_slide div:nth-child(1){
+    padding-top: 20px;
+    flex: 1;
+    font-size: 30px;
+    /* border:2px solid red; */
+}
+.main_slide div:nth-child(1) p{
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.main_slide div:nth-child(1) span {
+    text-decoration: underline;
+    color: rgb(252, 57, 8);
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(253, 176, 34);
+}
+.red_btn{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 160px;
+    font-weight: bold;
+    color: aliceblue;
+    line-height: 50px;
+    background-color: rgb(253,77,8);
+    border-radius: 5px;
+    border: 1px solid rgb(253,77,8);
+    box-shadow: 0 10px 15px rgb(250,120,69);
+    transition: all 0.2s;
+}
+
+.red_btn i{
+    color:white;
+    background-color: rgb(253,77,8);
+    transition: all 0.2s;
+
+    font-size:large;
+    text-align: center;
+}
+.red_btn:hover{
+    background-color: white;
+    box-shadow: 0 2px 15px rgb(250,120,69);
+    color:rgb(253,77,8);
+    border: 1px solid rgb(253,77,8);
+}
+.red_btn:hover i{
+    color:rgb(253,77,8);
+    background-color: white;
+}
+
+/* -----------------home end-------------------------------------------- */
+/* -----------itmes start------------------ */
+
+.food-items{
+    margin: 3rem 17vw;
+    /* border:2px solid rgb(100, 35, 219); */
+    /* margin: 70px 0; */
+    /* padding: 20px 0; */
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item{
+    /* border:2px solid red; */
+    background-color: white;
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+.item div{
+    height: 160px;
+}
+
+.item img{
+    /* border:2px solid red; */
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.item p{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom:10px;
+}
+.white_btn{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 160px;
+    font-weight: bold;
+    color: rgb(253,77,8);
+    line-height: 50px;
+    border: 1px solid rgb(253,77,8);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgb(250,120,69);
+    transition: all 0.2s;
+}
+.white_btn:hover{
+    color: aliceblue;
+    background-color: rgb(253,77,8);
+    box-shadow: 0 10px 15px rgb(258,120,69);
+
+}
+/* .red_btn, .item .white_btn {
+    width: 120px;
+    line-height: 35px;
+} */
+/*-------------------------- intems end---------------------------- */
+
+/* -----------------------------------silde2-----start--- */
+.main_slide2{
+    /* border: 2px solid red; */
+    margin-left: 100px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.fooding{
+    flex:0.5
+}
+
+.fooding img{
+    /* border: 2px solid green; */
+    /* max-width:500px; */
+    width: 30vw;
+}
+
+.question{
+    /* border: 2px solid green; */
+    flex: 0.5;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.question h2{
+    font-size:40px;
+    margin-bottom: 15px;
+}
+
+.q-ans{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.q-ans img{
+    width:52px;
+}
+.q-ans div:first-child{
+    padding: 10px;
+    border-radius: 50%;
+    height: 65px;
+    text-align: center;
+    background-color: white;
+    margin-right: 20px;
+}
+.q-ans div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+.q-ans div:nth-child(2) p{
+    margin-top:10px;
+    font-size: 13px;
+}
+/* -------main slid2 end -------------*/
+
+/*-------------------- main slid3 start---------------------------- */
+
+.main_slide3{
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index:1;
+    padding:0 4rem;
+    
+}
+.main_slide3 .fav-head{
+    /* border: 2px solid; */
+    text-align: center;
+    width: 450px;
+    margin-bottom: 30px;
+}
+.main_slide3 .fav-head h3{
+    font-size: 35px;
+    padding: 20px 0;
+}
+
+.main_slide3 .fav-head p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.main_slide3 .fav-food{
+    margin-top:30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+/* .main_slide3 .fav-food .item{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom:30px;
+    box-shadow:0 2px 10px rgba(119,119,199, 0.438);
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+} */
+
+.main_slide3 .fav-food .item {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main_slide3 .fav-food .item:hover {
+    transform: scale(1.05); /* Slightly increase the size of the div */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhance the shadow effect on hover */
+    background-color: white; /* Keep the background white */
+}
+
+
+
+
+.main_slide3 .fav-food .food-items div{
+    /* border: 2px solid blue; */
+    height: 160px;
+    margin-bottom: 15px;
+}
+
+.main_slide3 .fav-food .item img{
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.main_slide3 .fav-price{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main_slide3 .dsgn{
+   background-color: rgb(255,214,176);
+   /* border: 2px solid; */
+   height: 50%;
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+   bottom:0;
+   border-radius:10px;
+  
+
+}
+/* -------------------------main slid3 end------------------------------------- */
+
+/* --------------------------------------main slide4----------------------------------- */
+.main_slide4{
+    margin-top: 270px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.main_slide4 .chef-feed{
+    /* border:2px solid; */
+    flex: 0.5;
+    margin-top:20px;    
+}
+.main_slide4 .chef{
+    flex: 0.5;
+    text-align: right;
+}
+.main_slide4 .chef img{
+   margin-top: -130px;
+   width: 500px;
+   max-width: 500px;
+}
+
+.main_slide4 .chef-feed h2{
+    font-size: 40px;
+    margin-bottom:25px;
+}
+
+.main_slide4 .chef-feed p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom:10px;
+ 
+}
+
+.main_slide4 .chef-detail{
+    margin-top: 20px;
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+}
+
+.main_slide4 .chef-detail img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 4px solid white;
+}
+
+.main_slide4 .chef-detail h6{
+    font-size: 14px;
+
+}
+.main_slide4 .chef-detail p{
+    font-size: 11px;
+    color: red;
+}
+.main_slide4 .chef-vic{
+    display: flex;
+    align-items: center;
+    padding:25px 20px;
+    background-color: rgb(255,219,185);
+    border-radius: 0 100px 0 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.main_slide4 .chef-vic div{
+
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+     flex:0.5;
+    height:27px;
+    overflow: hidden;
+
+}
+
+.main_slide4 .chef-vic div i, .main_slide4 .chef-vic div h4{
+    font-size:27px;
+    margin-right: 8px;
+}
+
+.main_slide4 .chef-vic div h4{
+    color: red;
+}
+
+.main_slide4 .chef-vic div p{
+    font-size: 13px;
+    margin-top: 8px;
+    line-height: 13px;
+}
+/*---------------------------------------------main slide4----end------------------------------*/
+
+
+/* -----------letter start------------------- */
+.letter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 0;
+}
+.letter-head{
+    flex: 0.5;
+}
+
+.letter-head h2{
+    font-size: 40px;
+}
+
+.letter-head span{
+    color: red;
+}
+
+.letter-input{
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    flex: 0.5;
+}
+.letter-input div{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255,219,185);
+}
+
+.letter-input input{
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: rgb(255,219,185);
+}
+
+.letter-input .red_btn{
+    margin: 0;
+    font-size: 18px;
+    box-shadow: none;
+    border:0 10px 10px 0
+}
+address i{
+    font-size:2rem;
+    padding: 3px 5px;
+}
+
+/* ----------------letter end------------------------ */
+/* -----------------foter start----------------------------------- */
+
+.footer {
+    padding-bottom:50px;
+    padding-top: 1rem;
+    border-top: 2px solid rgb(252,184,187);
+    background-color: rgb(252,222,195);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* position: fixed; */
+    height:10rem;
+    bottom: 0; /* Fixed the issue by setting a correct bottom value */
+    width: 100%; /* Ensure the footer spans the full width */
+    z-index: 10; /* Optional: Ensures the footer stays on top of other content */
+}
+
+.footer .logo img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+.footer-1{
+    cursor: pointer;
+    font-size: 13px;
+    padding: 0px;
+    color: rgb(255,132,2);
+}
+.footer-2{
+    text-align: center;
+    cursor: pointer;
+}
+.footer-2 h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.footer-2 img{
+    width: 70px;
+    margin-bottom: 15px;
+    border-radius: 0.5rem;
+}
+
+
+
+/* -----------------------------footer end-------------------------- */
+
+
+
+/* -------------------------------responsive --------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    .main_slide{
+        display: flex;
+        justify-content: space-between;
+        gap:3rem;
+        
+    }
+    .main_1{
+        margin-top: 5rem;
+    }
+    #img1 {
+        height:400px;
+        width:400px;
+        /* border: 2px solid red; */
+    }
+    .main_slide2{
+        /* border: 2px solid red; */
+        margin-left: 20px ;
+        padding: 0 50px;
+    }
+    .fooding img{
+        /* border: 2px solid green; */
+        /* max-width:500px; */
+        width: 40vw;
+    }
+
+    .question h2{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .q-ans{
+        /* border:2px solid ; */
+        padding: 5px 0;
+        cursor: pointer;
+    }
+    .q-ans img{
+        width:49px;
+    }
+    .main_slide3 .fav-food{
+        gap: 2rem;
+
+    }
+    .main_slide3 .dsgn{
+        height:67%;
+    }
+    .main_slide4{
+        margin-top: 90px;
+        margin-bottom:0px;
+    }
+    .main_slide4 .chef img{
+       width: 400px;
+       margin:0px 0px 0px 0px;
+    }
+    .main_slide4 .chef-feed{
+        margin-top:0px;  
+    }
+    .main_slide4 .chef img{
+       width: 400px;
+    }
+    
+    .main_slide4 .chef-feed h2{
+        font-size: 35px;
+        margin-bottom:5px;
+    }
+    
+    .main_slide4 .chef-feed p{
+        font-size: 14px;
+        line-height:20px;
+        margin-bottom:0px;
+     
+    }
+    
+    .main_slide4 .chef-detail{
+        margin:10px 0;
+    }
+    
+    .main_slide4 .chef-detail img{
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+        border: 4px solid white;
+
+    }
+    
+    .main_slide4 .chef-detail h6{
+        font-size: 14px;
+    
+    }
+    .main_slide4 .chef-vic{
+        border-radius: 0 150px 0 0;
+        height:5rem;
+        margin-top: 0px;
+       
+    } 
+    .main_slide4 .chef-vic div{
+        height:70px;
+    
+    }
+    .main_slide4 .chef-vic div i, .main_slide4 .chef-vic div h4{
+        font-size:27px;
+        margin-right: 8px;
+    }
+
+    .main_slide4 .chef-vic div p{
+        font-size:8px;
+        line-height:9px;
+    }
+
+    .letter-head h2{
+        font-size: 25px;
+    }
+
+    .letter-input input{
+        font-size: 12px;
+        padding: 15px;
+        width:45vw;
+    }
+    .letter-input .red_btn{
+        line-height: 40px;
+        width:90px;
+        font-size: 12px;
+    }
+
+
+}
+
+@media (max-width:920px) {
+    nav .navbar{
+      max-width: 100%;
+      padding: 0 25px;
+    }
+  
+    nav .navbar .logo a{
+      font-size: 27px;
+    }
+    nav .navbar .links li{
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+    nav .navbar .links li a{
+      font-size: 15px;
+    }
+  }
+
+@media (max-width:800px){
+    .navbar .bx-menu{
+      display: block;
+    }
+    nav .navbar .nav-links{
+      position: fixed;
+      top: 0;
+      left: -100%;
+      display: block;
+      max-width: 270px;
+      width: 100%;
+      background-color: rgb(252, 222, 195);
+      box-shadow: 0 2px 20px rgb(253, 124, 124);
+      line-height: 40px;
+      padding: 20px;
+      transition: all 0.5s ease;
+      z-index: 1000;
+    }
+    .navbar .nav-links .sidebar-logo{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sidebar-logo .logo-name{
+      font-size: 25px;
+    }
+      .sidebar-logo  i,
+      .navbar .bx-menu{
+        font-size: 25px;
+      }
+    nav .navbar .links{
+      display: block;
+      margin-top: 20px;
+    }
+    nav .navbar .links li .arrow{
+      line-height: 40px;
+    }
+  nav .navbar .links li{
+      display: block;
+    }
+  
+  }
+
+
+@media screen and ( max-width: 768px){
+   .header .nav, .header .account{
+    display:none;
+   }
+   .search{
+    width: 60vw;
+    cursor: pointer;
+   }
+   .bar{
+    display: block;
+    cursor: pointer;
+   }
+   .headerbar {
+    border:2px solid red;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    right:-100%;
+    transition: all 0.5s;
+    background-color: rgb(252,231,216);
+    
+   }
+
+   .header .account, .headerbar .nav{
+    display: none;
+    font-size: 18px;
+   }
+
+
+   .bar .fa-xmark{
+    display:none;
+    top: 20px;
+    right: 5w;
+    position: absolute;
+    font-size: 25px;
+   }
+   .headerbar .nav ul{
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+   }
+
+   .headerbar .nav  li{
+    width: 96vw;
+    margin: 10px 0;
+    padding: 15px 30px;
+    box-shadow:0 2px 15px rgb(252, 193, 169);
+    font-size: 15px;
+    margin-top: 5px;
+   }
+
+   .headerbar .account{
+    line-height: 40px;
+    margin-top: 60px;
+    background-color: rgb(252,210,182);
+    padding: 15px;
+   }
+   .headerbar .account ul{
+    justify-content: space-between;
+   }
+
+   /* ------------home--------- */
+    .main_slide{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        align-items: center;
+        height:50rem;
+    }
+    .main_slide div:nth-child(2) {
+        /* border: 2px solid rgb(0, 4, 255); */
+        padding-top: 30px;
+        margin-bottom: -5rem;
+
+    }
+
+    .main_slide div:nth-child(1){
+        text-align: center;
+        /* border: 2px solid rgb(0, 255, 34); */
+        padding-top:0px;
+        font-size: 15px;
+    
+    }
+    .food-items{
+        margin-top:0rem;
+    }
+    .main_slide2{
+        /* border: 2px solid; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+   .question{
+    width: 60rem;
+    margin-right:0px;
+    /* border: 2px solid; */
+    }
+    
+    .main_slide3{
+        margin-top: 50px;
+    }
+    .main_slide3 .dsgn{
+        height:80%;
+    }
+    .main_slide3 .fav-head{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .main_slide4{
+        margin-top: 150px;
+    }
+    .main_slide4 .chef-feed{
+        flex: 1;
+    }
+
+    .main_slide4 .chef{
+     flex:1;
+     text-align: center;
+     margin-bottom: 40px;
+
+    }
+
+    .main_slide4 .chef img{
+        width: 80vw;
+    }
+
+    .main_slide4 .chef-vic div p{
+        font-size: 10px;
+    }
+
+    .letter-head h2{
+        font-size: 20px;
+    }
+
+    .letter-input input{
+        font-size: 12px;
+        padding: 15px;
+        width:50vw;
+    }
+    .letter-input .red_btn{
+        line-height: 40px;
+        width:90px;
+        font-size: 12px;
+    }
+
+    .footer .footer-1 div{
+        margin: 0;
+    }
+    .footer div{
+        margin-bottom: 40px;
+    }
+
+}
+ 
+
+@media screen and (max-width: 425px) {
+    body{
+
+        width: 225vw;
+        /* border: 2px solid; */
+    }
+    .main_slide div:nth-child(1) h1 {
+        line-height: 3rem;
+    }
+    .main_slide2 {
+        /* border:2px solid; */
+        padding: 0px 0px;
+
+    }   
+    .question div:nth-child(2){
+         font-size:1rem;
+    }
+    .fooding img{
+        width: 70vw;
+    }
+    
+    .question {
+        /* margin: 0px 0px ; */
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right:3rem;
+    }
+    .q-ans {
+        display: flex;
+        align-items: center;
+    }
+    .question h2{
+        font-size: 25px;
+        margin-top:0px;
+        margin-left: 4rem;
+    }
+    .question h4{
+       margin-top: 1rem;
+    }
+
+    .main_slide3 .fav-head{
+        width: 100%;
+        /* border: 2px solid; */
+        text-align: center;
+    }
+    .main_slide3 .fav-head h3{
+        font-size: 25px;
+    }
+    .main_slide3 .fav-head p{
+        /* border: 2px solid; */
+        font-size:15px;
+        /* width:70vw; */
+      
+    }
+
+    .main_slide3 .dsgn{
+        display: none;
+    }
+}
+
+@media (max-width:370px){
+  nav .navbar .nav-links{
+  max-width: 100%;
+} 
+}
+
+

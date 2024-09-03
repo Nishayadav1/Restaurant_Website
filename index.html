@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Asstes/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div>
+        <button class="button" id="signup-button">Sign Up</button>
+        <button class="button" id="signin-button">Sign In</button>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="form-container" id="signup-form">
+        <h2>Sign Up</h2>
+        <form id="signup">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+            <a href="home.html"> <input type="submit" value="Sign Up"></a>
+            <!-- <input type="submit" value="Sign Up"> -->
+
+        </form>
+    </div>
+
+    <!-- Sign In Form -->
+    <div class="form-container" id="signin-form">
+        <h2>Sign In</h2>
+        <form id="signin">
+            <label for="email-signin">Email:</label><br>
+            <input type="email" id="email-signin" name="email" required><br><br>
+
+            <label for="password-signin">Password:</label><br>
+            <input type="password" id="password-signin" name="password" required><br><br>
+
+            <input type="submit" value="Sign In">
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

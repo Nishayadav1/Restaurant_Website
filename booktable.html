@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Table</title>
+    <link rel="stylesheet" href="booktable.css">
+    <link rel="shortcut icon" href="./Asstes/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="booktable-sec">
+        <form action="#" method="post" onsubmit="sendEmail(); reset(); return false;">
+            <div class="book-box">
+                <div>
+                    <h1>Book Your Table</h1>
+                    <div class="book-cross">
+                        <a href="home.html"><i class="fa-solid fa-xmark" style="color:red;"></i></a>
+                    </div>
+                </div>
+        
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="name"  required>
+        
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" placeholder="email" required >
+        
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required >
+        
+                <label for="time">Time :</label>
+                <input type="time" id="time" name="time"  required>
+        
+                <button id="booknow" type="submit" >Book Now</button>
+            </div>
+        </form>
+
+        <div class="after-book">
+            <div>
+                <h1>ThanK You</h1>
+                <p>Your Table is booked</p>
+                <p>You will receive a message on your registered Email Id containing the details of your booking.</p>
+            </div>
+            <a href="home.html"><button>Home</button></a>
+        </div>
+    
+    </div>
+    <script src="booktable.js"></script>
+</body>
+</html>
