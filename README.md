@@ -4,7 +4,7 @@
 
 This project is a fully responsive and interactive restaurant website hosted on Netlify. The website includes multiple pages such as Home, About, Menu, Book a Table, Sign Up, and Sign In, providing users with an engaging and user-friendly experience.
 
-**Live Demo:** (https://cheery-haupia-09feef.netlify.app)
+**Live Demo:** (https://legendary-empanada-c0e145.netlify.app)
 
 ## Features
 
