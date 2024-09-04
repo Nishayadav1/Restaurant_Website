@@ -43,7 +43,7 @@ nav .navbar .nav-links {
 nav .navbar .links {
   display: flex;
   margin: 0px;
-    gapr:1.5rem;
+  gap:1.5rem;
 }
 
 nav .navbar .links li {
